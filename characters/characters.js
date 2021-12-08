@@ -89,7 +89,7 @@ module.exports = {
 				}
 		}
 
-		var randomNum = randomIntFromInterval(1, 12);
+		var randomNum = randomIntFromInterval(1, 14);
 		
 		
 		if (editMode == 0){
@@ -241,6 +241,30 @@ module.exports = {
 				return car;
 				break;
 			}
+			case 13: {
+				const snowmanCute = new Discord.MessageEmbed()
+					.setColor('#0099ff')
+					.setTitle('Merry Christmas!')
+					.setDescription('Quick! reply with ' + messageSelect + ' to give them a gift!')
+					.setImage('https://www.drawyouapicture.com/wp-content/uploads/2018/10/snowman.jpg')
+					.setTimestamp()
+					.setFooter('Ho Ho Ho');
+				
+				return snowmanCute;
+				break;
+			}
+			case 14: {
+				const penguin = new Discord.MessageEmbed()
+					.setColor('#0099ff')
+					.setTitle('Merry Christmas!')
+					.setDescription('Quick! reply with ' + messageSelect + ' to give them a gift!')
+					.setImage('https://www.drawyouapicture.com/wp-content/uploads/2018/10/penguin.jpg')
+					.setTimestamp()
+					.setFooter('Ho Ho Ho');
+				
+				return penguin;
+				break;
+			}
 		}
 
 
@@ -383,6 +407,28 @@ module.exports = {
 					.setFooter('Merry Christmas!');
 				
 					return car;
+					break;
+				}
+				case 13: {
+					const snowmanCute = new Discord.MessageEmbed()
+					.setColor('#0099ff')
+					.setDescription(user.toString() + ' Has gained the item' + randomItem())
+					.setImage('https://www.drawyouapicture.com/wp-content/uploads/2018/10/snowman.jpg')
+					.setTimestamp()
+					.setFooter('Merry Christmas!');
+				
+					return snowmanCute;
+					break;
+				}
+				case 14: {
+					const penguin = new Discord.MessageEmbed()
+					.setColor('#0099ff')
+					.setDescription(user.toString() + ' Has gained the item' + randomItem())
+					.setImage('https://www.drawyouapicture.com/wp-content/uploads/2018/10/penguin.jpg')
+					.setTimestamp()
+					.setFooter('Merry Christmas!');
+				
+					return penguin;
 					break;
 				}
 
@@ -529,6 +575,28 @@ module.exports = {
 					.setFooter('Better luck next time');
 				
 					return car;
+					break;
+				}
+				case 13: {
+					const snowmanCute = new Discord.MessageEmbed()
+					.setColor('#0099ff')
+					.setDescription("**That's the wrong command! they ran away **")
+					.setImage('https://www.drawyouapicture.com/wp-content/uploads/2018/10/snowman.jpg')
+					.setTimestamp()
+					.setFooter('Better luck next time');
+				
+					return snowmanCute;
+					break;
+				}
+				case 14: {
+					const penguin = new Discord.MessageEmbed()
+					.setColor('#0099ff')
+					.setDescription("**That's the wrong command! they ran away **")
+					.setImage('https://www.drawyouapicture.com/wp-content/uploads/2018/10/penguin.jpg')
+					.setTimestamp()
+					.setFooter('Better luck next time');
+				
+					return penguin;
 					break;
 				}
 			}
